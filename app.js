@@ -1,4 +1,5 @@
 // Creating a function that handles operations
+alert("Leave spaces when writing");
 
 function operateOnParameters(...param){
     let emptyErray = [];
@@ -98,7 +99,7 @@ const mult = document.getElementById('mult');
 const sub = document.getElementById('sub');
 const div = document.getElementById('div');
 const submit = document.getElementById('submit');
-
+const myNumbers = document.getElementsByClassName("numbers")
 
 const input = document.getElementById('input');
 
@@ -135,4 +136,22 @@ submit.onclick = () => {
     input.value = myArray;
 
 
+}
+
+
+for(let i = 0; i < myNumbers.length; i++){
+    myNumbers[i].onclick = () => {
+        
+        if(myNumbers[i].textContent == "+" || myNumbers[i].textContent == "*" || myNumbers[i].textContent == "-" || myNumbers[i].textContent == "/" ){
+            input.value += " " + myNumbers[i].textContent + " ";
+        }
+
+        else if(myNumbers[i].textContent == "C"){
+            input.value = "";
+        }
+
+        else{
+            input.value += myNumbers[i].textContent;
+        }
+    }
 }
