@@ -1,0 +1,112 @@
+*{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: whitesmoke;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main section{
+    width: 370px;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 2rem;
+    border: none;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.518);
+    background: linear-gradient(rgba(0, 0, 0, 0.667), black);
+}
+
+main section input{
+    font-size: 30px;
+    width: 100%;
+    border-color: grey;
+    background: grey;
+    background-color: transparent;
+    filter: drop-shadow(0 0 20px rgba(0, 0, 0, 0.907));
+    border: none;
+    height: 100px;
+    text-align: right;
+
+}
+
+main section .operations{
+    justify-content: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+main section .operations #number-buttons{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+
+main section .operations #number-buttons button{
+    background-color: rgba(31, 30, 30, 0.77);
+    color: white;
+    background: radial-gradient(rgb(60, 58, 58) , rgba(31, 30, 30, 0.77));
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+}
+
+main section .operations #logic{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    
+}
+
+main section .operations #logic button{
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 20px;
+    background: radial-gradient(rgb(232, 178, 79), rgb(255, 140, 0));
+    border: none;
+    }
+
+
+ .operations .extras button{
+    background-color: grey;
+    background: radial-gradient(grey, darkgrey);
+    color: white;
+    border: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 0.5rem;
+ }
+
+ 
+
+ footer{
+    position: fixed;
+    bottom: 40px;
+    background-color: rgba(0, 0, 0, 0.474);
+    color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 200px;
+    right: 50px;
+ }
+
+#input:focus{
+    outline: none;
+}
